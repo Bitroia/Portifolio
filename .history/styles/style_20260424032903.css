@@ -1,0 +1,19 @@
+:root {
+  :root {
+    --fundo-geral: #090808;
+    --fundo-cards: #120f0f;
+    --bg3: #1c1515;
+    --text: #f5f0ee;
+    --muted: rgba(245, 240, 238, 0.38);
+    --accent: #d4571e;
+    --accent-dim: rgba(212, 87, 30, 0.12);
+    --border: rgba(245, 240, 238, 0.07);
+  }
+}
+* {
+  margin: 0 auto;
+}
+
+body {
+  background-color: #0a0a0a;
+}

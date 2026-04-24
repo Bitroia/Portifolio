@@ -1,0 +1,11 @@
+:root {
+  --cor-fundo: #0a0a0a;
+  --cor-texto-comum:#61605E
+}
+* {
+  margin: 0 auto;
+}
+
+body {
+  background-color: #0a0a0a;
+}

@@ -1,0 +1,113 @@
+:root {
+  --fundo-geral: #090808;
+  --fundo-cards: #120f0f;
+  --hovers: #d8b5b5;
+  --text: #f5f0ee;
+  --second-text: #f5f0ee61;
+  --accent: #d4571e;
+  --accent-hover: #d4571e1f;
+  --border: #f5f0ee12;
+  --font-serif: "Syne", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+* {
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+body {
+  background-color: var(--fundo-geral);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5px;
+}
+
+#ul-container {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+#ul-container a {
+  text-decoration: none;
+  color: var(--second-text);
+  font-size: 13px;
+  transition: 0.5s;
+}
+
+#ul-container a:hover {
+  color: var(--hovers);
+}
+
+#sections-container {
+  display: flex;
+  margin-top: 50px;
+}
+
+#introduction-section {
+  left: 20%;
+}
+
+.line-1 {
+  color: var(--text);
+  display: block;
+  font-weight: bold;
+}
+
+.line-2 {
+  color: var(--second-text);
+  display: block;
+}
+
+.accent {
+  color: var(--accent);
+  display: block;
+  font-weight: bold;
+}
+
+.avaible-p {
+  color: var(--accent);
+}
+
+#introduction-section p{
+  justify-self: left;
+  display: block;
+}
+ #projects-btn{
+    background-color: var(--accent);
+    padding: 5px;
+    border-radius: 3px;
+    outline: none;
+ }
+
+
+
+
+
+#secondary-section {
+  right: 50%;
+}
+
+#about-me-section {
+  margin-top: 500px;
+}
+
+

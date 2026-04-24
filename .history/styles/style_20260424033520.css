@@ -1,0 +1,28 @@
+:root {
+  --fundo-geral: #090808;
+  --fundo-cards: #120f0f;
+  --hovers: #1c1515;
+  --text: #f5f0ee;
+  --second-text: #f5f0ee61;
+  --accent: #d4571e;
+  --accent-hover: #d4571e1f;
+  --border: #f5f0ee12;
+  --font-serif: "Syne", sans-serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+* {
+  margin: 0 auto;
+}
+
+h1,h2,h3{
+    font-family: var(--font-serif);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+body {
+  background-color: var(--fundo-geral);
+  color: var(--text);
+  font-family: ;
+}
