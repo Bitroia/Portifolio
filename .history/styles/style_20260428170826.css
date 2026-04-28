@@ -97,7 +97,7 @@ header {
 }
 
 .t-str{
-  color: var(--t-str);
+  color: var(-);
 }
 /* Sessões */
 

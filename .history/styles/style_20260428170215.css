@@ -8,8 +8,8 @@
   --accent: #d4571e;
   --accent-hover: #d4581ea9;
   --border: #f5f0ee12;
-  --t-str: #7DD3FC;
-  --t-comment: #5a6a1f;
+  --code: #7DD3FC;
+  --codetitle: #5a6a1f;
   --font-serif: "Syne", sans-serif;
   --font-sans: "Inter", sans-serif;
   --font-title: "Syne", sans-serif;
@@ -88,17 +88,18 @@ header {
   font-family: var(--font-mono);
 }
 
-.t-comment{
-  color: var(--t-comment);
-}
-
 .t-key{
   color: var(--accent);
 }
 
-.t-str{
-  color: var(--t-str);
+#info-container p{
+  color: var(--code);
 }
+
+.code-title{
+  color: var();
+}
+
 /* Sessões */
 
 #sections-container {

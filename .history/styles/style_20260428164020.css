@@ -8,13 +8,8 @@
   --accent: #d4571e;
   --accent-hover: #d4581ea9;
   --border: #f5f0ee12;
-  --t-str: #7DD3FC;
-  --t-comment: #5a6a1f;
   --font-serif: "Syne", sans-serif;
   --font-sans: "Inter", sans-serif;
-  --font-title: "Syne", sans-serif;
-  --font-body: "Inter", sans-serif;
-  --font-mono: "Syne Mono", monospace;
 }
 
 * {
@@ -63,6 +58,15 @@ header {
   color: var(--hovers);
 }
 
+#sections-container {
+  display: flex;
+  margin-top: 50px;
+}
+
+#introduction-section {
+  left: 20%;
+}
+
 .line-1 {
   color: var(--text);
   display: block;
@@ -84,36 +88,35 @@ header {
   color: var(--accent);
 }
 
-#info-container{
-  font-family: var(--font-mono);
-}
-
-.t-comment{
-  color: var(--t-comment);
-}
-
-.t-key{
-  color: var(--accent);
-}
-
-.t-str{
-  color: var(--t-str);
-}
-/* Sessões */
-
-#sections-container {
-  display: flex;
-  margin-top: 50px;
-}
-
-#introduction-section {
-  left: 20%;
-}
-
-#introduction-section p {
+#introduction-section p{
   justify-self: left;
   display: block;
+  line-break;
 }
+ #projects-btn{
+    background-color: var(--accent);
+    padding: 7px;
+    border-radius: 3px;
+    border: none;
+    color: var(--dark-text);
+ }
+
+  #talk-to-me-btn{
+    background-color: var(--fundo-cards);
+    padding: 7px;
+    border-radius: 3px;
+    border: var(--border);
+    color: var(--second-text);
+    margin-left: 7px;
+ }
+
+ #projects-btn:hover{
+    background-color: var(--accent-hover);
+ }
+
+
+
+
 
 #secondary-section {
   right: 50%;
@@ -123,25 +126,4 @@ header {
   margin-top: 500px;
 }
 
-/* Botões */
 
-#projects-btn {
-  background-color: var(--accent);
-  padding: 7px;
-  border-radius: 3px;
-  border: none;
-  color: var(--dark-text);
-}
-
-#talk-to-me-btn {
-  background-color: var(--fundo-cards);
-  padding: 7px;
-  border-radius: 3px;
-  border: var(--border);
-  color: var(--second-text);
-  margin-left: 7px;
-}
-
-#projects-btn:hover {
-  background-color: var(--accent-hover);
-}
