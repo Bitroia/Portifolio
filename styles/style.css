@@ -8,13 +8,10 @@
   --accent: #d4571e;
   --accent-hover: #d4581ea9;
   --border: #f5f0ee12;
-  --t-str: #7DD3FC;
+  --t-str: #7dd3fc;
   --t-comment: #5a6a1f;
-  --font-serif: "Syne", sans-serif;
-  --font-sans: "Inter", sans-serif;
   --font-title: "Syne", sans-serif;
   --font-body: "Inter", sans-serif;
-  --font-mono: "Syne Mono", monospace;
 }
 
 * {
@@ -24,17 +21,20 @@
 h1,
 h2,
 h3 {
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: -0.03em;
   color: var(--text);
+  font-family: var(--font-title);
 }
 
 body {
   background-color: var(--fundo-geral);
   color: var(--text);
-  font-family: var(--font-sans);
+  font-family: var(--font-body);
   font-weight: 400;
 }
+
+/* Header */
 
 header {
   border-bottom: 1px solid var(--border);
@@ -63,6 +63,8 @@ header {
   color: var(--hovers);
 }
 
+/* Apresentação */
+
 .line-1 {
   color: var(--text);
   display: block;
@@ -84,30 +86,108 @@ header {
   color: var(--accent);
 }
 
-#info-container{
-  font-family: var(--font-mono);
+/* Cards */
+
+#info-container {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
 }
 
-.t-comment{
+.terminal-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: #1c1515;
+  border-bottom: 2px solid var(--fundo-cards);
+  border-radius: 3px;
+  margin-bottom: 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red {
+  background-color: #ff5f57;
+}
+.dot.yellow {
+  background: #ffbd2e;
+}
+.dot.green {
+  background: #28c840;
+}
+
+.terminal-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--second-text);
+  margin: 0 auto;
+}
+
+#code-info-container {
+  color: var(--second-text);
+  background-color: var(--fundo-cards);
+  border-radius: 3px;
+  font-size: 12px;
+  line-height: 2;
+  height: 210px;
+}
+
+#code-info-container pre {
+  margin: 0;
+  padding: 1rem;
+  white-space: pre;    /* mantém a formatação do código */
+  max-width: 100%;     /* não vaza do pai */
+}
+
+.t-comment {
   color: var(--t-comment);
 }
 
-.t-key{
+.t-key {
   color: var(--accent);
 }
 
-.t-str{
+.t-str {
   color: var(--t-str);
 }
 /* Sessões */
 
-#sections-container {
-  display: flex;
-  margin-top: 50px;
+#introduction-section {
+  width: 50%;
 }
 
-#introduction-section {
-  left: 20%;
+#secondary-section {
+  width: 60%;
+}
+
+.mini-cards-container{
+  display: flex;
+}
+
+.mini-card {
+  border: 1px solid var(--border);
+  padding: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+.num{
+  color: var(--accent);
+  font-style: var(--font-mono);/* ver pq nao ta pegando */
+  font-size: 23px;
+  
+}
+
+#sections-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  padding: 0 40px;
 }
 
 #introduction-section p {
@@ -115,15 +195,11 @@ header {
   display: block;
 }
 
-#secondary-section {
-  right: 50%;
-}
-
 #about-me-section {
   margin-top: 500px;
 }
 
-/* Botões */
+
 
 #projects-btn {
   background-color: var(--accent);
