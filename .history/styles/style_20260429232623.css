@@ -416,17 +416,11 @@ header {
   height: 2px;
   background: var(--accent);
   transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
+  tar
 }
 
 .project-card:hover{
-  
-background-color: var(--border);
-}
-
-.project-card:hover::before {
-  transform: scaleX(1);
+  background-color: var(--border);
 }
 
 .link-overlay{

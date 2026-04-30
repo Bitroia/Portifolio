@@ -402,36 +402,6 @@ header {
   width: 90%;
   text-align: left;
   border-radius: 5px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.project-card::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover{
-  
-background-color: var(--border);
-}
-
-.project-card:hover::before {
-  transform: scaleX(1);
-}
-
-.link-overlay{
-  position: absolute;
-  inset: 0;
 }
 
 .num-article{
@@ -441,18 +411,11 @@ background-color: var(--border);
 
 .tech-tags{
   list-style: none;
-  display: flex;
-  gap: 7px;
 }
 
 .tech-tags li{
   border: 1px solid var(--border);
-  text-align: center;
-  background-color: var(--fundo-cards);
-  border-radius: 5px;
-  padding: 8px;
-  color: var(--second-text);
-  margin-top: 10px;
+  
 }
 
 #skills-section {

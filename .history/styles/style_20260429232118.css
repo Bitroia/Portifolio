@@ -404,29 +404,10 @@ header {
   border-radius: 5px;
   cursor: pointer;
   position: relative;
-  overflow: hidden;
-}
-
-.project-card::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
 }
 
 .project-card:hover{
-  
-background-color: var(--border);
-}
-
-.project-card:hover::before {
-  transform: scaleX(1);
+  background-color: var(--border);
 }
 
 .link-overlay{
@@ -442,7 +423,7 @@ background-color: var(--border);
 .tech-tags{
   list-style: none;
   display: flex;
-  gap: 7px;
+  gap: 5px;
 }
 
 .tech-tags li{
@@ -452,7 +433,7 @@ background-color: var(--border);
   border-radius: 5px;
   padding: 8px;
   color: var(--second-text);
-  margin-top: 10px;
+  mar
 }
 
 #skills-section {

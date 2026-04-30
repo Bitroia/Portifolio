@@ -420,11 +420,6 @@ header {
   transition: transform 0.3s ease;
 }
 
-.project-card:hover{
-  
-background-color: var(--border);
-}
-
 .project-card:hover::before {
   transform: scaleX(1);
 }

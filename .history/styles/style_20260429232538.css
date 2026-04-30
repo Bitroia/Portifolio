@@ -413,20 +413,11 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
-  background: var(--accent);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
+  height: ;
 }
 
 .project-card:hover{
-  
-background-color: var(--border);
-}
-
-.project-card:hover::before {
-  transform: scaleX(1);
+  background-color: var(--border);
 }
 
 .link-overlay{
