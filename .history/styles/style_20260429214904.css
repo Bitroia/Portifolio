@@ -43,31 +43,18 @@ h3 {
   font-weight: 800;
 }
 
-.font-history {
+.font-history{
   font-size: 3rem;
   font-weight: 800;
 }
 
-.font-history-2 {
+.font-history-2{
   color: var(--accent);
 }
 
 p {
   color: var(--second-text);
   line-height: 1.2;
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-}
-.title::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background-color: var(--border);
 }
 
 body {
@@ -298,11 +285,9 @@ header {
   margin-top: 3%;
   border-bottom: 1px solid var(--border);
   display: flex;
-  flex-wrap: wrap;
 }
 
-.title,
-.available-p {
+.title, .available-p  {
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.12em;
@@ -317,82 +302,18 @@ header {
   flex: 1;
 }
 
-.date-exp {
+.date-exp{
+
   color: var(--accent);
   font-family: var(--font-mono);
-  font-size: 14px;
-  margin-bottom: 3px;
 }
 
-.experiences-list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px; /* espaço entre cada experiência */
-}
-
-.exp-item {
-  position: relative;
-}
-
-.exp-content {
+.experiences-list{
   display: flex;
   flex-direction: column;
 }
 
-.desc-exp {
-  margin: 4px 0 0 0;
-}
-
-.box-icon {
-  position: relative;
-  flex-shrink: 0; /* impede o ícone de encolher */
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--border);
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  background-color: var(--fundo-cards);
-}
-
-.icon {
-  font-size: 14px;
-}
-
-.exp-item:not(:last-child) .box-icon::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 60px;
-  background-color: var(--border);
-}
-
-/* Linha do tempo */
-
-.exp-row {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-
-#projects-section {
-  margin-top: 3%;
-  border-bottom: 1px solid var(--border);
-}
-
-#skills-section {
-  margin-top: 3%;
-  border-bottom: 1px solid var(--border);
-}
-
-#go-to-work-section {
-  margin-top: 3%;
-  border-bottom: 1px solid var(--border);
-}
+.desc
 /* Botões */
 
 #projects-btn {

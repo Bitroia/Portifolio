@@ -1,5 +1,5 @@
 :root {
-  --fundo-geral: #0a0a0a;
+  --fundo-geral: #090808;
   --fundo-cards: #111111;
   --hovers: #d8b5b5;
   --text: #f5f0ee;
@@ -11,18 +11,11 @@
   --t-str: #7dd3fc;
   --t-comment: #5a6a1f;
   --font-title: "Syne", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif ;
 }
 @keyframes pulse {
-  0%,
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.4;
-    transform: scale(1.5);
-  }
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.5); }
 }
 * {
   padding: 0;
@@ -38,36 +31,13 @@ h3 {
 }
 
 .line-1,
-.accent {
+.accent{
   font-family: var(--font-title);
   font-weight: 800;
 }
 
-.font-history {
-  font-size: 3rem;
-  font-weight: 800;
-}
-
-.font-history-2 {
-  color: var(--accent);
-}
-
 p {
   color: var(--second-text);
-  line-height: 1.2;
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-}
-.title::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background-color: var(--border);
 }
 
 body {
@@ -108,7 +78,7 @@ header {
 
 /* Apresentação */
 
-#available-container {
+#available-container{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -162,7 +132,7 @@ header {
   border-radius: 5px;
   margin-bottom: 0;
 }
-.dot-2 {
+.dot-2{
   background-color: #ccff00;
   animation: pulse 2s ease-in-out infinite;
   width: 5px;
@@ -224,7 +194,7 @@ header {
 }
 /* Sessões */
 
-#hero-section {
+#hero-section{
   padding: 0 40px 50px 0;
   margin-top: 3%;
   border-bottom: 1px solid var(--border);
@@ -234,7 +204,7 @@ header {
   flex: 1;
 }
 
-#introduction-section .p-introduction {
+#introduction-section .p-introduction{
   border-left: var(--accent) 2px solid;
   padding-left: 12px;
 }
@@ -298,101 +268,14 @@ header {
   margin-top: 3%;
   border-bottom: 1px solid var(--border);
   display: flex;
-  flex-wrap: wrap;
 }
 
-.title,
-.available-p {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--accent);
-  display: flex;
-  align-items: center;
-  gap: 10px;
+#history-section{
+
 }
 
-#history-section {
-  flex: 1;
-}
+.broke{}
 
-.date-exp {
-  color: var(--accent);
-  font-family: var(--font-mono);
-  font-size: 14px;
-  margin-bottom: 3px;
-}
-
-.experiences-list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px; /* espaço entre cada experiência */
-}
-
-.exp-item {
-  position: relative;
-}
-
-.exp-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.desc-exp {
-  margin: 4px 0 0 0;
-}
-
-.box-icon {
-  position: relative;
-  flex-shrink: 0; /* impede o ícone de encolher */
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--border);
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  background-color: var(--fundo-cards);
-}
-
-.icon {
-  font-size: 14px;
-}
-
-.exp-item:not(:last-child) .box-icon::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 60px;
-  background-color: var(--border);
-}
-
-/* Linha do tempo */
-
-.exp-row {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-
-#projects-section {
-  margin-top: 3%;
-  border-bottom: 1px solid var(--border);
-}
-
-#skills-section {
-  margin-top: 3%;
-  border-bottom: 1px solid var(--border);
-}
-
-#go-to-work-section {
-  margin-top: 3%;
-  border-bottom: 1px solid var(--border);
-}
 /* Botões */
 
 #projects-btn {
@@ -401,7 +284,7 @@ header {
   border-radius: 5px;
   border: none;
   color: var(--dark-text);
-  font-size: 1rem;
+  font-size:1rem;
   font-weight: 600;
   text-align: center;
   transition: transform 0.2s ease;
@@ -416,15 +299,14 @@ header {
   margin-left: 7px;
   font-weight: 600;
   text-align: center;
-  font-size: 1rem;
+  font-size:1rem;
   transition: transform 0.2s ease;
 }
 
 #projects-btn:hover {
   background-color: var(--accent-hover);
-  box-shadow:
-    0 0 10px rgba(212, 87, 30, 0.6),
-    0 0 20px rgba(212, 87, 30, 0.4);
+  box-shadow: 0 0 10px rgba(212, 87, 30, 0.6),
+              0 0 20px rgba(212, 87, 30, 0.4);
   transform: translateY(-2px);
 }
 

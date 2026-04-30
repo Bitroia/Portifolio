@@ -57,19 +57,6 @@ p {
   line-height: 1.2;
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-}
-.title::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background-color: var(--border);
-}
-
 body {
   background-color: var(--fundo-geral);
   color: var(--text);
@@ -298,7 +285,6 @@ header {
   margin-top: 3%;
   border-bottom: 1px solid var(--border);
   display: flex;
-  flex-wrap: wrap;
 }
 
 .title,
@@ -320,32 +306,31 @@ header {
 .date-exp {
   color: var(--accent);
   font-family: var(--font-mono);
-  font-size: 14px;
-  margin-bottom: 3px;
 }
 
 .experiences-list {
   display: flex;
   flex-direction: column;
-  gap: 32px; /* espaço entre cada experiência */
 }
 
 .exp-item {
-  position: relative;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
 }
 
-.exp-content {
+.exp-content{
   display: flex;
-  flex-direction: column;
+  fle
 }
 
 .desc-exp {
-  margin: 4px 0 0 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
 
-.box-icon {
-  position: relative;
-  flex-shrink: 0; /* impede o ícone de encolher */
+.box-icon{
   display: flex;
   align-items: center;
   border: 1px solid var(--border);
@@ -356,42 +341,8 @@ header {
   background-color: var(--fundo-cards);
 }
 
-.icon {
+.icon{
   font-size: 14px;
-}
-
-.exp-item:not(:last-child) .box-icon::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1px;
-  height: 60px;
-  background-color: var(--border);
-}
-
-/* Linha do tempo */
-
-.exp-row {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-
-#projects-section {
-  margin-top: 3%;
-  border-bottom: 1px solid var(--border);
-}
-
-#skills-section {
-  margin-top: 3%;
-  border-bottom: 1px solid var(--border);
-}
-
-#go-to-work-section {
-  margin-top: 3%;
-  border-bottom: 1px solid var(--border);
 }
 /* Botões */
 

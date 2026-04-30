@@ -57,15 +57,14 @@ p {
   line-height: 1.2;
 }
 
-.title {
+.title{
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 100%;
 }
-.title::after {
-  content: "";
-  flex: 1;
+.title::after{
+  content: '';
+  flex: 2;
   height: 1px;
   background-color: var(--border);
 }
@@ -295,10 +294,9 @@ header {
 
 #about-me-section {
   padding: 0 40px 50px 0;
-  margin-top: 3%;
+  margin-top: 4%;
   border-bottom: 1px solid var(--border);
   display: flex;
-  flex-wrap: wrap;
 }
 
 .title,
@@ -325,16 +323,16 @@ header {
 }
 
 .experiences-list {
-  display: flex;
+ display: flex;
   flex-direction: column;
   gap: 32px; /* espaço entre cada experiência */
 }
 
 .exp-item {
-  position: relative;
+position: relative;
 }
 
-.exp-content {
+.exp-content{
   display: flex;
   flex-direction: column;
 }
@@ -343,7 +341,7 @@ header {
   margin: 4px 0 0 0;
 }
 
-.box-icon {
+.box-icon{
   position: relative;
   flex-shrink: 0; /* impede o ícone de encolher */
   display: flex;
@@ -356,12 +354,12 @@ header {
   background-color: var(--fundo-cards);
 }
 
-.icon {
+.icon{
   font-size: 14px;
 }
 
 .exp-item:not(:last-child) .box-icon::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 50%;
@@ -373,24 +371,22 @@ header {
 
 /* Linha do tempo */
 
-.exp-row {
-  display: flex;
+.exp-row { 
+  display: flex; 
   gap: 16px;
   align-items: flex-start;
 }
 
-#projects-section {
-  margin-top: 3%;
+#projects-section{
+
+   border-bottom: 1px solid var(--border);
+}
+
+#skills-section{
   border-bottom: 1px solid var(--border);
 }
 
-#skills-section {
-  margin-top: 3%;
-  border-bottom: 1px solid var(--border);
-}
-
-#go-to-work-section {
-  margin-top: 3%;
+#go-to-work-section{
   border-bottom: 1px solid var(--border);
 }
 /* Botões */
