@@ -1,0 +1,394 @@
+/* Responsividade */
+
+/* ── Tablet grande / landscape (max 1024px) ── */
+@media (max-width: 1024px) {
+  #sections-container {
+    flex-direction: column;
+    padding: 0 24px;
+    gap: 32px;
+  }
+
+  #secondary-section {
+    width: 100%;
+  }
+
+  .mini-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #hero-section {
+    padding: 0 24px 40px;
+  }
+
+  #about-me-section {
+    padding: 0 24px 40px;
+  }
+
+  #article-container {
+    flex-direction: column;
+    margin: 20px 24px;
+    gap: 16px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  #stacks-container {
+    flex-wrap: wrap;
+    margin: 20px 24px 40px;
+    gap: 16px;
+  }
+
+  .stack-card {
+    width: calc(50% - 8px);
+  }
+
+  #nav-container {
+    padding: 12px 24px;
+  }
+
+  .font-go-to-work {
+    font-size: 2.4rem;
+  }
+
+  .font-go-to-work .accent {
+    font-size: 3rem;
+  }
+}
+
+/* ── Tablet (max 768px) ── */
+
+@media (max-width: 768px) {
+  /* Nav */
+  #nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 20px;
+    gap: 10px;
+  }
+
+  #ul-container {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+
+  /* Hero */
+
+  #hero-section {
+    padding: 0 20px 36px;
+  }
+
+  #sections-container {
+    padding: 0 20px;
+    margin-top: 24px;
+    gap: 28px;
+  }
+
+  .line-1,
+  .line-2,
+  .accent {
+    font-size: 2.2rem;
+  }
+
+  .p-introduction {
+    font-size: 14px;
+  }
+
+  #code-info-container {
+    height: auto;
+    font-size: 11px;
+  }
+
+  #code-info-container pre {
+    overflow-x: auto;
+  }
+
+  .mini-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .mini-card {
+    padding: 18px;
+  }
+
+  /* About */
+
+  #about-me-section {
+    padding: 0 20px 36px;
+    flex-direction: column;
+  }
+
+  #history-section {
+    width: 100%;
+  }
+
+  #experiences-section {
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .font-history,
+  .font-history-2 {
+    font-size: 1.6rem;
+  }
+
+  /* Projects */
+
+  #projects-section {
+    padding: 0 20px 36px;
+  }
+
+  #article-container {
+    margin: 20px 0;
+    gap: 14px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .font-build {
+    font-size: 1.6rem;
+  }
+
+  /* Skills */
+
+  #skills-section {
+    padding: 0 20px 36px;
+  }
+
+  #stacks-container {
+    flex-direction: column;
+    margin: 20px 0 36px;
+    gap: 14px;
+  }
+
+  .stack-card {
+    width: 100%;
+  }
+
+  .font-stack {
+    font-size: 1.6rem;
+  }
+
+  /* Contact */
+  
+  #go-to-work-section {
+    padding: 0 20px 36px;
+  }
+
+  .font-go-to-work {
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+
+  .font-go-to-work .accent {
+    font-size: 2.6rem;
+  }
+
+  #links-container-go-to-work {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #go-to-work-section a {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+
+/* ── Mobile (max 480px) ── */
+@media (max-width: 480px) {
+  /* Nav */
+  #nav-container {
+    padding: 12px 16px;
+  }
+
+  #nav-container h2 {
+    font-size: 16px;
+  }
+
+  #ul-container {
+    gap: 6px 12px;
+  }
+
+  #ul-container a {
+    font-size: 11px;
+  }
+
+  /* Hero */
+  #hero-section {
+    padding: 0 16px 28px;
+  }
+
+  #sections-container {
+    padding: 0 16px;
+    margin-top: 20px;
+    gap: 24px;
+  }
+
+  .line-1,
+  .line-2 {
+    font-size: 1.9rem;
+  }
+
+  .accent {
+    font-size: 1.9rem;
+  }
+
+  .available-p {
+    font-size: 11px;
+  }
+
+  .p-introduction {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* Remove <br> efeito no mobile — o texto quebra naturalmente */
+  .p-introduction br {
+    display: none;
+  }
+
+  .cta-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  #introduction-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Terminal */
+  #info-container {
+    width: 100%;
+  }
+
+  #code-info-container {
+    font-size: 10px;
+  }
+
+  #code-info-container pre {
+    padding: 10px;
+  }
+
+  .mini-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .mini-card {
+    padding: 14px;
+  }
+
+  .num {
+    font-size: 18px;
+  }
+
+  .mini-card .label {
+    font-size: 13px;
+  }
+
+  /* About */
+  #about-me-section {
+    padding: 0 16px 28px;
+  }
+
+  .font-history,
+  .font-history-2 {
+    font-size: 1.4rem;
+  }
+
+  #history-section p {
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  #history-section p br {
+    display: none;
+  }
+
+  /* Projects */
+  #projects-section {
+    padding: 0 16px 28px;
+  }
+
+  #article-container {
+    margin: 16px 0;
+    gap: 12px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .font-build {
+    font-size: 1.4rem;
+  }
+
+  /* Skills */
+  #skills-section {
+    padding: 0 16px 28px;
+  }
+
+  #stacks-container {
+    margin: 16px 0 28px;
+    gap: 12px;
+  }
+
+  .font-stack {
+    font-size: 1.4rem;
+  }
+
+  /* Contact */
+  #go-to-work-section {
+    padding: 0 16px 28px;
+  }
+
+  .font-go-to-work {
+    font-size: 1.7rem;
+    margin-top: 20px;
+  }
+
+  .font-go-to-work .accent {
+    font-size: 2.2rem;
+  }
+
+  #go-to-work-section p br {
+    display: none;
+  }
+
+  #links-container-go-to-work {
+    padding: 0 0 10px;
+  }
+
+  #go-to-work-section a {
+    max-width: 100%;
+    font-size: 13px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 16px;
+    font-size: 12px;
+  }
+}
