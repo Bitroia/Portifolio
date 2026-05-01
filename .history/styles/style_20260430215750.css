@@ -258,7 +258,6 @@ header {
 
 .t-comment {
   color: var(--t-comment);
-  text-align: center;
 }
 
 .t-key {
@@ -453,6 +452,7 @@ header {
 
 #article-container {
   display: flex;
+  flex-wrap: wrap;
   margin: 30px;
   font-family: var(--font-mono);
 }

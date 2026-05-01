@@ -277,14 +277,13 @@
   #code-info-container {
     font-size: 10px;
     height: auto;
-    overflow-x: auto;
   }
 
   #code-info-container pre {
     padding: 10px;
-    white-space: pre;
+    white-space: pre-wrap;
     word-break: break-word;
-    overflow-x: auto;
+    overflow-x: hidden;
   }
 
   #code-info-container code {

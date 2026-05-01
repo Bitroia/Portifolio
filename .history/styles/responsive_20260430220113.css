@@ -283,7 +283,7 @@
   #code-info-container pre {
     padding: 10px;
     white-space: pre;
-    word-break: break-word;
+
     overflow-x: auto;
   }
 

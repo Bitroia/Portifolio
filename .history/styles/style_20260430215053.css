@@ -43,7 +43,6 @@ html {
 }
 * {
   padding: 0;
-  box-sizing: border-box;
 }
 
 h1,
@@ -252,13 +251,14 @@ header {
 #code-info-container pre {
   margin: 0;
   padding: 1rem;
-  white-space: pre; /* mantém a formatação do código */
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: hidden;
   max-width: 100%; /* não vaza do pai */
 }
 
 .t-comment {
   color: var(--t-comment);
-  text-align: center;
 }
 
 .t-key {
@@ -271,7 +271,7 @@ header {
 /* Sessões */
 
 #hero-section {
-  padding: 0 40px 50px 40px;
+  padding: 0 40px 50px 0;
   margin-top: 3%;
   border-bottom: 1px solid var(--border);
 }

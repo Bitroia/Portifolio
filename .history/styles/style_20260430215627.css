@@ -43,7 +43,7 @@ html {
 }
 * {
   padding: 0;
-  box-sizing: border-box;
+  box
 }
 
 h1,
@@ -258,7 +258,6 @@ header {
 
 .t-comment {
   color: var(--t-comment);
-  text-align: center;
 }
 
 .t-key {

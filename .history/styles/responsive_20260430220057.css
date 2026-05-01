@@ -284,7 +284,7 @@
     padding: 10px;
     white-space: pre;
     word-break: break-word;
-    overflow-x: auto;
+    overflow-x: hidden;
   }
 
   #code-info-container code {
